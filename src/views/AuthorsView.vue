@@ -10,8 +10,8 @@ fetchAuthors();
 </script>
 
 <template>
-  <div>
-    <p v-if="authors" v-for="author in authors" :key="author.id">
+  <div v-if="authors">
+    <p v-for="author in authors" :key="author.id">
       <RouterLink :to="`/author/${author.username}`">{{
         author.name
       }}</RouterLink>

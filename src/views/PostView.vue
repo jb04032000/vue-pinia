@@ -12,7 +12,6 @@ const { post, loading, error } = storeToRefs(usePostStore());
 const { fetchPost } = usePostStore();
 
 fetchAuthors();
-// console.log("route.params.id", route.params.id);
 fetchPost(route.params.id);
 </script>
 
